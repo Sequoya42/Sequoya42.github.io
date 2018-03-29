@@ -1,1 +1,504 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><script src=https://apis.google.com/js/api.js></script><meta name=viewport content="width=device-width,initial-scale=1"><title>probable-memory</title><link href=/static/css/app.ae0134b294cda0dac6b4014665b70c3a.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.1e43116e4d04a1127687.js></script><script type=text/javascript src=/static/js/vendor.17d770379dd0b1b3199f.js></script><script type=text/javascript src=/static/js/app.24fccbb349122bea016d.js></script></body></html>
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Raphael Sequoya Baum</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Raphael Sequoya Baum
+					</h1>
+					<h2>
+						Software Engineer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">baumraphael@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">06.13.39.66.82</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href="cv.42.fr/rbaum">cv.42.fr/rbaum</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Polyvalent software developer, looking for new challenges. Psyched about joining a team of great people, and share in a peer-to-peer spirit.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="goo.gl/YuWFAK">goo.gl/YuWFAK</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						linkedin
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="goo.gl/3E3Ft2">goo.gl/3E3Ft2</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						StackOverflow
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="goo.gl/xhNeNN">goo.gl/xhNeNN</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Vue-Land
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="goo.gl/1wMTSg">goo.gl/1wMTSg</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						SoundCloud
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="goo.gl/YuWFAK">goo.gl/YuWFAK</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Wittycirle</span>
+					<span class="date">
+						2017-Jan — 2017-Jul
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="wittycircle.com">wittycircle.com</a>
+				</div>
+				<div class="position">
+					Back-end developer
+				</div>
+				<div class="summary">
+					<p>We showcase all the ideas, projects and startups from around the world and connect them to millions  of people who could work with them, including you.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Total refont of REST API</li>
+					<li class="bullet">Migration of MySQL database</li>
+					<li class="bullet">Sendgrid integration</li>
+					<li class="bullet">Techno: Nodejs, Mysql, Express, Knex, Chakram</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="volunteer" class="row">
+		<aside class="col-sm-3">
+			<h3>Volunteer</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Youth center</span>
+					<span class="date">
+						2012 — 2014
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="goo.gl/ZXeXZK">goo.gl/ZXeXZK</a>
+				</div>
+				<div class="position">
+					Team member
+				</div>
+				<div class="summary">
+					<p>Since it&#x27;s creation, the &quot;33&quot; allow young people to explore their skills and have a physical activity, events, and focused on music</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>42</span>
+					<span class="date">
+						2017 — Current
+					</span>
+				</h4>
+				<div class="area">
+					Digital architect
+				</div>
+				<div class="studyType">
+					
+				</div>
+				<h4>Courses</h4>
+				<ul class="courses">
+					<li>C</li>
+					<li>Piscine C++</li>
+					<li>Piscine Ocaml</li>
+					<li>Corewar: virtual arena in C where asm programs fight one another.</li>
+					<li>Wolf3D/Fractol: doom-like map, and graphical fractal in C</li>
+					<li>root-me.org: initiation to security and exploit</li>
+					<li>Libasm: some libc  functions in x86-64 asm</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Front end</h4>
+				</div>
+				<ul class="keywords">
+					<li>VueJs</li>
+					<li>React</li>
+					<li>HTML/CSS</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Back end</h4>
+				</div>
+				<ul class="keywords">
+					<li>NodeJs</li>
+					<li>Express</li>
+					<li>MySQL / PostgreSQL</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Unix / Linux</h4>
+				</div>
+				<ul class="keywords">
+					<li>Git</li>
+					<li>Shell script</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Fluent
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>French</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Nature</h4>
+				</div>
+				<ul class="keywords">
+					<li>Hiking</li>
+					<li>Harmony</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Music</h4>
+				</div>
+				<ul class="keywords">
+					<li>Piano</li>
+					<li>Darbouka</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Social</h4>
+				</div>
+				<ul class="keywords">
+					<li>Conflict resolution</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+
+	</div>
+	
+	</body>
+</html>
